@@ -2,7 +2,7 @@
 function Car() {}
 
 Car.prototype.door = 4;
-Car.prototype.handle = 2;
+Car.prototype.handle = 1;
 
 const carA  = new Car();
 const carB = new Car();
