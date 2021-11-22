@@ -1,3 +1,4 @@
+// const Car () => {} -> no have prototype property
 function Car() {}
 
 Car.prototype.door = 4;
