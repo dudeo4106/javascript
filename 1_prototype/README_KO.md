@@ -62,6 +62,26 @@ CarA, CarB는 Car함수로 생성되었기때문에 Car.prototype 참조할 수 
 
 <br>
 
+## 📌 Prototype Link
+
+```
+function Car() {}
+
+Car.prototype.door = 4;
+
+const carA  = new Car();
+console.log(carA.door);  // => 4
+```
+
+carA에는 door라는 속성이 없는데도 4라는 값이 화면에 나온다.<br>
+이 이유는 __proto__가 그것을 가능하게 해준다.
+
+prototype속성은 함수만 가지고 있던 것과는 달리 __proto__ 속성은 모든 객체가 빠짐 없이 가지고 있는 속성이다.<br>
+carA라는 객체는 door를 갖고 있지 않기 때문에 해당 속성을 찾을 때 까지 상위 prototype을 탐색 하고 못 찾았을 경우에는 undefined를 리턴한다.<br>
+이것을 프로토타입 체인이라고 한다.
+
+<br>
+
 ---
 
 📚 참고 : <br>
