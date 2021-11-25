@@ -19,24 +19,9 @@ console.log(carB.handle); // => 1
 ```
 
 carA와 carB는 door와 handle를 공통적으로 갖고 있는데 메모리에는 door/handle이 각각 2개씩 할당된다.
-그렇기에 아래처럼 프로토타입으로 만드는 것이 좋다
+그렇기에 위처럼 프로토타입으로 만드는 것이 좋다.
 
-```
-function Car() {}
-
-Car.prototype.door = 4;
-Car.prototype.handle = 2;
-
-const carA  = new Car();
-const carB = new Car();
-console.log(carA.door);  // => 4
-console.log(carA.handle);  // => 1
-console.log(carB.door); // => 4
-console.log(carB.handle); // => 1
-```
-
-Car.prototype이라는 빈 Object가 어딘가 존재하고, Car 함수로부터 생성된 객체들은 어딘가의 존재하는 Object의 값을 사용할 수 있다.
-
+Car.prototype이라는 빈 Object가 어딘가 존재하고, Car 함수로부터 생성된 객체들은 어딘가의 존재하는 Object의 값을 사용할 수 있다.<br>
 구체적으로는 속성이 하나도 없는 Car라는 함수가 정의되고, 파싱단계에 들어가면, Car함수의 prototype속성은 prototype객체를 참조하며,<br>
 prototype 객체 멤버인 constructor 속성은 Car 함수를 참조하는 구조를 갖는다.
 
