@@ -33,8 +33,6 @@ message는 외부함수에 존재하는 값임에도 불구하고, 사라진 외
 
 즉 closure란 내부함수가 외부함수의 지역변수에 접근 할 수 있고, 외부함수는 외부함수의 지역변수를 사용하는 내부함수가 소멸될 때까지 소멸되지 않는 특성을 의미한다.
 
-<br>
-
 ```
 function factoryPerson(age){
     return {
@@ -64,6 +62,8 @@ factoryPerson를 공유하고 있는 a, b의 getAge의 결과는 서로 다르�
 결국 age를 읽고 수정 할 수 있는 것은 factoryPerson 메소드를 통해서 만들어진 객체뿐이고,
 private한 속성을 지원하지 않는 js의 closure특성으로 private한 속성을 사용할 수 있게 된다.<br>
 
+<br>
+
 ## 📌 Closure 장점
 
 장점1. 캡슐화
@@ -77,6 +77,8 @@ private한 속성을 지원하지 않는 js의 closure특성으로 private한 �
 
 - closure 함수를 각각의 변수에 할당하면 각자 독립적으로 값을 보존 및 사용이 가능하다.<br>
   closure를 통해 데이터와 메소드를 묶을수 있기 때문에 모듈화에 유리
+
+<br>
 
 ---
 
