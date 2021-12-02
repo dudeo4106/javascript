@@ -83,3 +83,8 @@ privateなプロパティをサポートしないjsのclosure特性で、private
 ---
 
 📚 参考 : <br>
+[https://developer.mozilla.org/ko/docs/Web/JavaScript/Closures](https://developer.mozilla.org/ko/docs/Web/JavaScript/Closures)
+<br>
+[https://opentutorials.org/course/743/6544](https://opentutorials.org/course/743/6544)
+<br>
+[https://hanamon.kr/javascript-%ED%81%B4%EB%A1%9C%EC%A0%80/?ckattempt=1](https://hanamon.kr/javascript-%ED%81%B4%EB%A1%9C%EC%A0%80/?ckattempt=1)
