@@ -1,3 +1,10 @@
+console.log(num); // ---> undefined
+
+num = 1;
+var num;
+
+console.log(num) // ---> 1
+
 var Hoisting
 
 function Hoisting() {
