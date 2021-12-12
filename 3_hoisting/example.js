@@ -5,16 +5,20 @@ var num;
 
 console.log(num) // ---> 1
 
-var Hoisting
+console.log('-------------');
+
+Hoisting();
+
+var Hoisting;
 
 function Hoisting() {
     console.log(1);
 }
 
-Hoisting()
+Hoisting();
 
 Hoisting = function () {
     console.log(2);
 }
 
-Hoisting()
+Hoisting();

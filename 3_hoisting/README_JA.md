@@ -39,11 +39,18 @@ ES6からconst, letが追加されていますが、JSにおいても宣言ラ�
 
 ## 📌 Function Hoisting
 
+宣言と同時に関数が生成され、宣言前にも関数を使用することができます。<br>
+具体的には、関数宣言文は宣言と同時に関数生成を完全にEnvironment Recordに保存しておくので、上記のように宣言前にも関数を使用することができます。
+
+下のコードを見ると、Hoisting を呼び出すコードの位置が関数宣言より先に実行される位置にあります。<br>
+しかし、宣言したコード順序とは異なり、関数宣言文が先に実行されることが分かります。
+
 ```
-Hoisting()
+Hoisting() // call Hoisting
+
 var Hoisting
 
-function Hoisting() {
+function Hoisting() { // declare function
     console.log(1);
 }
 
@@ -59,3 +66,6 @@ Hoisting = function () {
 📚 参考 : <br>
 [https://www.youtube.com/watch?v=EWfujNzSUmw&t=423s](https://www.youtube.com/watch?v=EWfujNzSUmw&t=423s)
 <br>
+[https://blog.naver.com/sinjoker/221507371077](https://blog.naver.com/sinjoker/221507371077)
+<br>
+[https://lamarr.dev/javascript/2020/04/07/02.html](https://lamarr.dev/javascript/2020/04/07/02.html)
